@@ -1,0 +1,17 @@
+.dropdown {
+  &-toggle {
+    @apply border rounded px-4 py-2;
+  }
+  &-menu {
+    @apply hidden py-2 border rounded bg-white;
+    &.show {
+      @apply block;
+    }
+  }
+  &-item{
+    @apply py-1 px-4 hover:bg-slate-100 block;
+  }
+  &-divider {
+    @apply h-0 my-2 overflow-hidden border-t opacity-100;
+}
+}

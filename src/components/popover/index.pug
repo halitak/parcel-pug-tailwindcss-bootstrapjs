@@ -1,0 +1,13 @@
+mixin Popover({title='Popover title', content="And here's some amazing content. It's very engaging. Right?"})
+  button.btn.btn-primary(type='button' data-bs-toggle='popover' data-bs-title=title data-bs-content=content) Click to toggle popover
+  button.btn.btn-secondary(type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='top' data-bs-content='Top popover')
+    | Popover on top
+  button.btn.btn-secondary(type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='right' data-bs-content='Right popover')
+    | Popover on right
+  button.btn.btn-secondary(type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='bottom' data-bs-content='Bottom popover')
+    | Popover on bottom
+  button.btn.btn-secondary(type='button' data-bs-container='body' data-bs-toggle='popover' data-bs-placement='left' data-bs-content='Left popover')
+    | Popover on left
+  a.btn.btn-lg.btn-danger(tabindex='0' role='button' data-bs-toggle='popover' data-bs-trigger='focus' data-bs-title='Dismissible popover' data-bs-content="And here's some amazing content. It's very engaging. Right?") Dismissible popover
+  span.d-inline-block(tabindex='0' data-bs-toggle='popover' data-bs-trigger='hover focus' data-bs-content='Disabled popover')
+    button.btn.btn-primary(type='button' disabled='') Disabled button

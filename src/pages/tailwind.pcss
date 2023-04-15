@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bs-popover-max-width: 276px;
+    --bs-popover-arrow-height: 0.5rem;
+    --bs-popover-border-width: 1px;
+    --bs-popover-arrow-width: 1rem;
+    --bs-popover-arrow-border: rgba(0, 0, 0, 0.175);
+    --bs-popover-bg: #fff;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply m-1 px-3 py-1.5 rounded-md;
+  }
+  .btn-primary {
+    @apply bg-blue-600 text-white;
+  }
+  .btn-secondary {
+    @apply bg-gray-600 text-white;
+  }
+  .btn-close {
+    @apply box-content p-[.25em] border-none rounded opacity-50 hover:opacity-75 bg-no-repeat bg-auto bg-center text-black focus:opacity-100 disabled:opacity-25;
+  }
+  .btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    @apply text-white bg-blue-600 pointer-events-none border-blue-600 opacity-60;
+  }
+}
+
+@layer utilities {
+  .collapse {
+    visibility: unset;
+  }
+  .collapse-tw {
+    visibility: collapse;
+  }
+  .fade {
+    @apply transition-opacity duration-150 ease-linear;
+  }
+  
+}

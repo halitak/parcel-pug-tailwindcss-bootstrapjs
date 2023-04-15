@@ -1,0 +1,42 @@
+.modal {
+  --bs-modal-width: 500px;
+  @apply fixed top-0 left-0 hidden w-full h-full overflow-x-hidden overflow-y-auto outline-0 z-20;
+  &-content {
+    @apply relative flex flex-col w-full pointer-events-auto bg-clip-padding border rounded-md outline-0;
+  }
+  &-header {
+    @apply flex shrink-0 items-center justify-between p-4 border-b rounded-t-md;
+  }
+  &-body {
+    @apply relative flex-auto p-4;
+  }
+  &-footer {
+    @apply flex shrink-0 flex-wrap items-center justify-end p-3 border-t rounded-b-md;
+  }
+  &-header .btn-close {
+    @apply p-2 -m-2 ml-auto;
+  }
+  &.fade &-dialog {
+    @apply translate-y-[-50px] transition-transform duration-300 ease-out;
+  }
+  &.show &-dialog {
+    @apply transform-none;
+  }
+  &-dialog {
+    @apply relative w-auto m-7 pointer-events-none bg-white rounded-md;
+    @media screen(sm) {
+      @apply max-w-[--bs-modal-width] mx-auto;
+    }
+  }
+  &-backdrop {
+    --bs-backdrop-bg: #000;
+    --bs-backdrop-opacity: 0.5;
+    @apply fixed top-0 left-0 z-10 w-screen h-screen bg-[--bs-backdrop-bg];
+    &.fade {
+      @apply opacity-0;
+    }
+    &.show {
+      @apply opacity-[--bs-backdrop-opacity];
+    }
+  }
+}

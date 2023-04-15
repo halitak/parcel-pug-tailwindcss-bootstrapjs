@@ -1,0 +1,21 @@
+mixin OffCanvas({id="offcanvasExample"})
+  button.btn.btn-primary(type='button' data-bs-toggle='offcanvas' data-bs-target='#'+id aria-controls=id)
+    | Button with data-bs-target
+  .offcanvas.offcanvas-start(id=id tabindex='-1' aria-labelledby=id+'Label')
+    .offcanvas-header
+      h5.offcanvas-title(id=id+'Label') Offcanvas #{id}
+      button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+        +svg-x
+    .offcanvas-body
+      div
+        | Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      .dropdown.mt-3
+        button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown')
+          | Dropdown button
+        ul.dropdown-menu
+          li
+            a.dropdown-item(href='#') Action
+          li
+            a.dropdown-item(href='#') Another action
+          li
+            a.dropdown-item(href='#') Something else here

@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{name}
+  body(class="grid gap-4 p-4") 
+    include ../icons/index
+    include ../components/index
+    // Accordion
+    div(class="flex flex-col items-start justify-start")
+      h1 Accordion
+      +Accordion({})
+    // Alert
+    div(class="flex flex-col items-start justify-start")
+      h1 Alert
+      +Alert({})
+    // Dropdown
+    div(class="flex flex-col items-start justify-start")
+      h1 Dropdown
+      +Dropdown({})
+    // MODAL
+    div(class="flex flex-col items-start justify-start")
+      h1 Modal
+      +Modal({})
+    // OFFCANVAS
+    div(class="flex flex-col items-start justify-start")
+      h1 OffCanvas
+      +OffCanvas({})
+    // PLACEHOLDER
+    div(class="flex flex-col items-start justify-start")
+      h1 Placeholder
+      +Placeholder({})
+    div(class="flex flex-col items-start justify-start")
+      h1 Popover
+      +Popover({})
+    div(class="flex flex-col items-start justify-start")
+      h1 Toast
+      +Toast({})
+    script(type='module' src='app.js')

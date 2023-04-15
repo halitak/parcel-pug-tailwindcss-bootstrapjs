@@ -1,0 +1,25 @@
+mixin Placeholder({})
+  div(class="flex justify-start gap-4")
+    div(class="overflow-hidden border rounded-lg w-72")
+      svg.bd-placeholder-img.card-img-top(width='100%' height='180' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder' preserveaspectratio='xMidYMid slice' focusable='false')
+        title Placeholder
+        rect(width='100%' height='100%' fill='#20c997')
+      div(class="flex-auto p-4")
+        h5(class="mb-2") Card title
+        p(class="mb-4 break-words")
+          | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+        a.btn.btn-primary(href='#') Go somewhere
+    div(class="overflow-hidden border rounded-lg w-72" aria-hidden='true')
+      svg.bd-placeholder-img.card-img-top(width='100%' height='180' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder' preserveaspectratio='xMidYMid slice' focusable='false')
+        title Placeholder
+        rect(width='100%' height='100%' fill='#868e96')
+      div(class="flex-auto p-4")
+        h5(class="mb-2 placeholder-glow")
+          span(class="w-28 placeholder")
+        p(class="mb-4 placeholder-glow")
+          span(class="w-24 placeholder")
+          span(class="w-12 placeholder")
+          span(class="w-16 placeholder")
+          span(class="placeholder w-28")
+          span(class="placeholder w-44")
+        a.btn.btn-primary.disabled(class="placeholder w-36")

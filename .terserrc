@@ -1,0 +1,21 @@
+{
+  "parse": {},
+  "compress": {},
+  "mangle": {
+    "properties": {}
+  },
+  "format": {
+    "beautify": true,
+    "comments":"all"
+  },
+  "sourceMap": {},
+  "ecma": 5,
+  "enclose": false,
+  "keep_classnames": false,
+  "keep_fnames": false,
+  "ie8": true,
+  "module": false,
+  "nameCache": null,
+  "safari10": false,
+  "toplevel": false
+}

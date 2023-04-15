@@ -1,0 +1,30 @@
+{
+  "name": "my-project",
+  "browserslist": "> 0.2% and not dead",
+  "alias": {
+    "components": "./src/components"
+  },
+  "scripts": {
+    "start": "rm -rf dist && parcel ./src/pages/*.pug",
+    "build": "rm -rf dist && parcel build ./src/pages/*.pug",
+    "svpug": "svpug -i src/svgs -o src/icons"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.8.3",
+    "autoprefixer": "^10.4.14",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "svpug": "^0.1.1",
+    "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3"
+  },
+  "@parcel/transformer-css": {
+    "drafts": {
+      "nesting": true
+    }
+  }
+}
